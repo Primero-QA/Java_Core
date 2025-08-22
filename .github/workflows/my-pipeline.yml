@@ -18,6 +18,15 @@ jobs:
         run: |
           echo "Message 1"
           echo "Message 2"
+
+      - name: Check files
+        run: ls -la
+
+      - name: Clone my repo
+        uses: actions/checkout@v1
+
+      - name: Check files
+        run: ls -la
           
   my_deploy:
     runs-on: ubuntu-latest
