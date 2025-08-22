@@ -1,0 +1,22 @@
+# Br br
+name: My-Github-Actions
+
+on: 
+  push:
+    branches:
+      - main
+    
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print nice message from testing
+        run: echo "Hello World! from testing"
+
+  my_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print nice message from deploy
+        run: echo "Hello World! from deploy"
